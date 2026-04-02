@@ -1,0 +1,147 @@
+{
+  "theme": {
+    "archetype": "4 - Swiss & High-Contrast",
+    "mode": "light",
+    "domain": "SaaS / E-commerce Analytics",
+    "vibe": "Authority, clarity, precise, trustworthy, functional."
+  },
+  "colors": {
+    "background": "#F8F9FA",
+    "surface": "#FFFFFF",
+    "primary": {
+      "DEFAULT": "#4F46E5",
+      "hover": "#4338CA",
+      "foreground": "#FFFFFF"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "tertiary": "#9CA3AF"
+    },
+    "border": {
+      "DEFAULT": "#E5E7EB",
+      "hover": "#D1D5DB"
+    },
+    "status": {
+      "success": {
+        "text": "#047857",
+        "bg": "#D1FAE5",
+        "border": "#A7F3D0"
+      },
+      "danger": {
+        "text": "#B91C1C",
+        "bg": "#FEE2E2",
+        "border": "#FECACA"
+      },
+      "warning": {
+        "text": "#B45309",
+        "bg": "#FEF3C7",
+        "border": "#FDE68A"
+      }
+    }
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Outfit, sans-serif",
+      "body": "IBM Plex Sans, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "hierarchy": {
+      "h1": "text-4xl sm:text-5xl font-bold tracking-tight text-gray-900",
+      "h2": "text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight text-gray-900",
+      "h4": "text-lg sm:text-xl font-medium tracking-tight text-gray-900",
+      "body": "text-base font-normal leading-relaxed text-gray-600",
+      "small": "text-sm font-medium tracking-wide text-gray-500 uppercase",
+      "metric_value": "font-mono text-4xl sm:text-5xl font-semibold tracking-tight text-indigo-600"
+    },
+    "import_links": [
+      "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&display=swap');"
+    ]
+  },
+  "layout": {
+    "strategy": "The 'Control Room' Grid",
+    "spacing_scale": "Tailwind default but generous internal padding (p-6, p-8)",
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6",
+    "sidebar": "w-64 fixed inset-y-0 left-0 border-r border-gray-200 bg-white z-40",
+    "main_content": "pl-64 min-h-screen bg-[#F8F9FA] pb-12 pt-8 px-8",
+    "surface_styles": {
+      "card": "bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow duration-200",
+      "header": "sticky top-0 z-30 bg-white/80 backdrop-blur-md border-b border-gray-200 py-4 px-8 flex justify-between items-center"
+    }
+  },
+  "components": {
+    "shadcn_customizations": {
+      "Button": "rounded-md font-medium tracking-wide border transition-all duration-200. Primary: bg-indigo-600 text-white hover:bg-indigo-700 border-transparent. Outline: bg-white text-gray-700 border-gray-300 hover:bg-gray-50.",
+      "Card": "rounded-lg border-gray-200 shadow-sm. Use Cardless for dense lists where possible (just border-b separators).",
+      "Input": "rounded-md border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 bg-white text-gray-900",
+      "Table": "w-full text-left text-sm text-gray-600. Headers: bg-gray-50 uppercase text-xs font-semibold text-gray-500 py-3 px-4. Rows: border-b border-gray-200 hover:bg-gray-50/50 transition-colors py-3 px-4.",
+      "Badge": "rounded-full px-2.5 py-0.5 text-xs font-medium border"
+    },
+    "required_shadcn_components": [
+      "button",
+      "card",
+      "input",
+      "label",
+      "table",
+      "dialog",
+      "tabs",
+      "select",
+      "badge",
+      "dropdown-menu"
+    ],
+    "charting": {
+      "library": "recharts",
+      "palette": ["#4F46E5", "#10B981", "#E5E7EB", "#F59E0B"],
+      "guideline": "Use clean line charts for conversion rates, simple bar charts for revenue recovered. Remove background grid lines, use clean tooltips with 1px borders."
+    }
+  },
+  "interactions_and_motion": {
+    "hover_states": "All interactive elements must have clear hover states. Buttons: darken bg. Cards: subtle lift (-translate-y-0.5) and shadow increase (shadow-md).",
+    "focus_states": "Accessibility focus: focus:ring-2 focus:ring-indigo-500 focus:outline-none.",
+    "transitions": "transition-all duration-200 ease-in-out for colors, shadows, and transforms."
+  },
+  "icons_and_media": {
+    "icon_library": "@phosphor-icons/react",
+    "icon_style": "Duotone or Regular weight for dashboard precision.",
+    "media_urls": {
+      "logo": {
+        "url": "https://images.unsplash.com/photo-1764601841441-34ebb3d42a78?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzZ8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMGdlb21ldHJpYyUyMG1vZGVybiUyMGxvZ298ZW58MHx8fHwxNzc1MTM1NzA2fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract geometric modern logo. Use for the sidebar brand."
+      },
+      "avatar_1": {
+        "url": "https://images.unsplash.com/photo-1609371497456-3a55a205d5eb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMGF2YXRhcnxlbnwwfHx8fDE3NzUxMzU3MDV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional female avatar for top right user profile."
+      },
+      "avatar_2": {
+        "url": "https://images.unsplash.com/photo-1633625510483-c177f4308f33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMzJ8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBoZWFkc2hvdCUyMGF2YXRhcnxlbnwwfHx8fDE3NzUxMzU3MDV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Professional male avatar for secondary profiles or team members."
+      },
+      "auth_background": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/69055fa5-84f1-4621-9dce-f1fb71b74aff/images/0384a1741c06fe1509981619fa8a14fea6da49a7c21046e0c3ee828147f256a4.png",
+        "description": "A minimalist, high-contrast 3D abstract composition showing a glowing sphere breaking through a clean white grid. Use for the login/signup page split-screen background."
+      },
+      "recovered_cart_icon": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/69055fa5-84f1-4621-9dce-f1fb71b74aff/images/0318771860a9e969fa6b9138e9ee63ade0ee070d5a77b26e3e752180c9f63be3.png",
+        "description": "Minimalist 3D icon of a shopping cart with a glowing green checkmark. Use for the 'Recovered Revenue' card or empty state success."
+      }
+    }
+  },
+  "accessibility_and_testing": {
+    "contrast": "Text must meet WCAG AA standards. Ensure secondary text (#6B7280) on gray (#F8F9FA) is readable.",
+    "testing_attributes": "All interactive elements MUST include `data-testid` (e.g., data-testid='login-submit-btn', data-testid='sidebar-nav-dashboard')."
+  },
+  "instructions_to_main_agent": [
+    "Install the required fonts via Google Fonts in index.css.",
+    "Install and use @phosphor-icons/react for all icons.",
+    "Setup routing for: Dashboard (overview), Abandoned Carts List, Email Recovery Setup, Exit Popup Builder, Store Settings.",
+    "Implement the Layout with a fixed Left Sidebar and top header.",
+    "Use Recharts for the Analytics Overview (Revenue over time, Abandoned vs Recovered).",
+    "Build a clean tabular view for Abandoned Carts with status badges (Pending, Recovered, Lost).",
+    "For the Email Setup and Popup Builder, use a split view: Settings/Form on the left, Live Preview Card on the right.",
+    "Use standard HTML/Tailwind for structural layout and spacing (p-6, p-8), and use Shadcn only for interactive atomic components (Inputs, Buttons, Tabs, Dialogs).",
+    "Add the Auth screen (split view: form on left, the auth_background image on right).",
+    "All components must use `data-testid`."
+  ]
+}
